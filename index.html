@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Gym Pal</title>
+  </head>
+  <body>
+    <form id="signup-form">
+      <h2>Your Gym Pal</h2>
+
+      <div class="field">
+        <label>Email </label>
+        <input
+          type="email"
+          class="textfield"
+          placeholder="Enter your email"
+          id="email"
+          required
+        />
+      </div>
+
+      <div class="field">
+        <label>Password </label>
+        <input
+          type="password"
+          minlength="8"
+          class="textfield"
+          placeholder="Enter your password"
+          required
+          name="password"
+        />
+      </div>
+
+      <div class="field">
+        <label>How many times do you want to workout?</label>
+        <input
+          type="number"
+          min="1"
+          max="7"
+          class="textfield"
+          placeholder="Number of workouts per week"
+          required
+        />
+      </div>
+
+      <div class="field">
+        <label
+          >Phone number <span class="example">(4 to 12 digits)</span></label
+        >
+        <input
+          type="tel"
+          class="textfield"
+          placeholder="Phone number"
+          required
+          pattern="\+?[0-9]{4,15}"
+        />
+      </div>
+
+      <div class="field">
+        <label
+          >How did you find out about our website?
+          <span class="example">Optional</span></label
+        >
+        <input type="text" class="textfield" placeholder="Source" />
+      </div>
+      <button type="submit" id="register-button" class="btn">Sign up</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
